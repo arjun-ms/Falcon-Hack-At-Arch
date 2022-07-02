@@ -68,7 +68,7 @@ if img is not None :
         else:
             prediction = 'normal'
         print(f"Prediction: {prediction}")
-        st.write(f"Prediction: {prediction}")
+        st.subheader(f"Prediction: {prediction}")
 
 
         #! sends mail
@@ -92,4 +92,4 @@ if img is not None :
                 smtp.login(Sender_Email, password)              
                 smtp.send_message(newMessage)
                 print("Mail sent ✅")
-                st.write("Mail sent ✅")
+                st.subheader("Mail sent ✅")
